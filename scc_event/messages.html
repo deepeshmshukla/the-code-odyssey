@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link
+      data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+      rel="icon"
+      sizes="192x192"
+      href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-list {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .profile-card:hover {
+            background-color: #f0f0f0;
+        }
+
+        .profile-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .profile-card .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-card .profile-info h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .profile-card .profile-info p {
+            margin: 2px 0;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .chat-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #0095f6;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .chat-button:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Instagram Chat</h1>
+        <div class="profile-list">
+            <a href="chat.html">
+            <div class="profile-card" onclick="openChat('chat with Ai')">
+                <img src="https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png" alt="John Doe">
+                <div class="profile-info">
+                    <h3>chat with Ai</h3>
+                    <p>hi! how are you</p>
+                </div>
+            </div>
+            </a>
+
+            <div class="profile-card" onclick="openChat('JohnDoe')">
+                <img src="https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png" alt="John Doe">
+                <div class="profile-info">
+                    <h3>vice-president(blue-tick)</h3>
+                    <p>juice pila doh.</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="openChat('JaneSmith')">
+                <img src="https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png" alt="Jane Smith">
+                <div class="profile-info">
+                    <h3>popa trump</h3>
+                    <p>oil doh democracy lo</p>
+                </div>
+            </div>
+
+            <div class="profile-card" onclick="openChat('MarkJohnson')">
+                <img src="https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png" alt="Mark Johnson">
+                <div class="profile-info">
+                    <h3>adolf hitler</h3>
+                    <p>bhai recall karde</p>
+                </div>
+            </div>
+
+            <!-- Add more profiles here as needed -->
+        </div>
+
+        <a href="null.html">
+        <button class="chat-button" onclick="window.location.href='chat.html'">Start New Chat</button>
+        </a>
+    </div>
+
+    <script>
+        function openChat(username) {
+            // This function will navigate to a new chat page for the selected user
+            // Here you can use JavaScript to dynamically load the user's chat or redirect to another page
+            alert('You are now chatting with ' + username);
+            // You could also redirect to a page like: window.location.href = 'chat.html?user=' + username;
+        }
+    </script>
+
+</body>
+</html>

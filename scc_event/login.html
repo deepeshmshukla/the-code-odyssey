@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link
+      data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+      rel="icon"
+      sizes="192x192"
+      href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            width: 350px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 175px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #006bb3;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .or-divider::before, .or-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .or-divider span {
+            padding: 0 10px;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+
+        .facebook-login {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #385185;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .facebook-login:hover {
+            background-color: #2d3e6a;
+        }
+
+        .signup-text {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .signup-text a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="assets/Instagram_logo.png" alt="Instagram Logo">
+        </div>
+
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit" class="btn">Log In</button>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
+
+        <button class="facebook-login">
+            Log in with Facebook
+        </button>
+
+        <div class="signup-text">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+
+</body>
+</html>

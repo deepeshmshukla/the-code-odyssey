@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px; /* Limit max width for better form design */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container, .file-container, .camera-container {
+    margin-bottom: 15px;
+    width: 100%; /* Make sure the input containers take up the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+}
+
+textarea {
+    width: 90%; /* Reduce the width to allow some space around */
+    max-width: 500px; /* Max width for textarea */
+    height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    text-align: left; /* Align the text inside */
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+    width: 90%; /* Align the file input with other form elements */
+    max-width: 500px;
+}
+
+#mediaPreview img, #mediaPreview video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+button {
+    width: 90%; /* Button width aligns with form inputs */
+    max-width: 500px; /* Button max width */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.camera-container {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.camera-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.camera-container button:hover {
+    background-color: #0056b3;
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.post-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.post-card img, .post-card video {
+    width: 100%;
+    height: auto;
+}
+
+.post-card .caption {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="create.css">
+    <link
+    data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    rel="icon"
+    sizes="192x192"
+    href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+  />
+</head>
+<body>
+    <div class="container">
+        <h1>Create a New Post</h1>
+        <form id="postForm">
+            <div class="input-container">
+                <label for="caption">Caption</label>
+                <textarea id="caption" name="caption" placeholder="Write a caption..." required></textarea>
+            </div>
+            <div class="button" tabindex="0">
+                <label for="media">Upload Photo/Video</label>
+                <input type="file" id="media" name="media" accept="image/*, video/*">
+                <div id="mediaPreview"></div>
+            </div>
+            <!-- Camera button to open camera -->
+            <div class="camera-container">
+                <button type="button" id="cameraButton" onclick="openCamera()">Use Camera</button>
+                <div id="cameraPreview" style="display:none;">
+                    <video id="videoElement" width="100%" height="auto" autoplay></video>
+                    <button type="button" onclick="captureImage()">Capture</button>
+                </div>
+            </div>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+
+    <script src="create.css"></script>
+</body>
+</html>

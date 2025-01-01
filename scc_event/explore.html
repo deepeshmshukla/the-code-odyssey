@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="explore.css">
+    <link
+    data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    rel="icon"
+    sizes="192x192"
+    href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+  />
+</head>
+
+<body>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchPosts()" />
+    </div>
+
+    <!-- Suggested Posts Section -->
+    <div class="posts-container">
+        <h2>Suggested Posts</h2>
+
+        <!-- Post 1 -->
+        <div class="post" id="post-1">
+            <div class="post-header">
+                <div class="post-info-flex">
+                    <img src="assets/pexels-wendelmoretti-1972115.jpg" alt="Profile Picture" class="profile-pic" />
+                    <p>Username 1</p>
+                    <ul>
+                        <li class="list-time">2 hrs</li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <img src="assets/pexels-harsh-kushwaha-804217-1721558.jpg" alt="Post Image" class="post-img" />
+            <div class="post-icons">
+                <div class="post-icons-left">
+                    <i class="fas fa-heart" onclick="toggleLike(1)"></i>
+                    <i class="fas fa-comment" onclick="toggleCommentSection(1)"></i>
+                    <i class="fas fa-share" onclick="toggleSharePopup(1)"></i>
+                </div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <p id="likesCount-1" class="likes">100 likes</p>
+            <p class="caption">@Username 1 Caption goes here...</p>
+            <a href="#" class="comments" onclick="toggleCommentSection(1)">View all comments</a>
+
+            <div class="comments-section" id="commentsSection-1" style="display: none;">
+                <ul id="commentsList-1" class="comments-list"></ul>
+                <div class="comments-form">
+                    <input type="text" id="commentInput-1" placeholder="Add a comment..." onkeydown="addComment(event, 1)" />
+                </div>
+            </div>
+        </div>
+        <div class="post" id="post-2">
+            <div class="post-header">
+                <div class="post-info-flex">
+                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png" alt="Profile Picture" class="profile-pic" />
+                    <p>Username 1</p>
+                    <ul>
+                        <li class="list-time">2 hrs</li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <img src="assets/pexels-jmendezrf-1536619.jpg" alt="Post Image" class="post-img" />
+            <div class="post-icons">
+                <div class="post-icons-left">
+                    <i class="fas fa-heart" onclick="toggleLike(1)"></i>
+                    <i class="fas fa-comment" onclick="toggleCommentSection(1)"></i>
+                    <i class="fas fa-share" onclick="toggleSharePopup(1)"></i>
+                </div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <p id="likesCount-1" class="likes">100 likes</p>
+            <p class="caption">@Username 1 Caption goes here...</p>
+            <a href="#" class="comments" onclick="toggleCommentSection(1)">View all comments</a>
+
+            <div class="comments-section" id="commentsSection-1" style="display: none;">
+                <ul id="commentsList-1" class="comments-list"></ul>
+                <div class="comments-form">
+                    <input type="text" id="commentInput-1" placeholder="Add a comment..." onkeydown="addComment(event, 1)" />
+                </div>
+            </div>
+        </div>
+        <div class="post" id="post-3">
+            <div class="post-header">
+                <div class="post-info-flex">
+                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png" alt="Profile Picture" class="profile-pic" />
+                    <p>Username 1</p>
+                    <ul>
+                        <li class="list-time">2 hrs</li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <img src="assets/pexels-pixabay-220769.jpg" alt="Post Image" class="post-img" />
+            <div class="post-icons">
+                <div class="post-icons-left">
+                    <i class="fas fa-heart" onclick="toggleLike(1)"></i>
+                    <i class="fas fa-comment" onclick="toggleCommentSection(1)"></i>
+                    <i class="fas fa-share" onclick="toggleSharePopup(1)"></i>
+                </div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <p id="likesCount-1" class="likes">100 likes</p>
+            <p class="caption">@Username 1 Caption goes here...</p>
+            <a href="#" class="comments" onclick="toggleCommentSection(1)">View all comments</a>
+
+            <div class="comments-section" id="commentsSection-1" style="display: none;">
+                <ul id="commentsList-1" class="comments-list"></ul>
+                <div class="comments-form">
+                    <input type="text" id="commentInput-1" placeholder="Add a comment..." onkeydown="addComment(event, 1)" />
+                </div>
+            </div>
+        </div>
+        <div class="post" id="post-4">
+            <div class="post-header">
+                <div class="post-info-flex">
+                    <img src="assets/pexels-harsh-kushwaha-804217-1721558.jpg" alt="Profile Picture" class="profile-pic" />
+                    <p>Username 1</p>
+                    <ul>
+                        <li class="list-time">2 hrs</li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <img src="assets/exp5.jpg" alt="Post Image" class="post-img" />
+            <div class="post-icons">
+                <div class="post-icons-left">
+                    <i class="fas fa-heart" onclick="toggleLike(1)"></i>
+                    <i class="fas fa-comment" onclick="toggleCommentSection(1)"></i>
+                    <i class="fas fa-share" onclick="toggleSharePopup(1)"></i>
+                </div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <p id="likesCount-1" class="likes">100 likes</p>
+            <p class="caption">@Username 1 Caption goes here...</p>
+            <a href="#" class="comments" onclick="toggleCommentSection(1)">View all comments</a>
+
+            <div class="comments-section" id="commentsSection-1" style="display: none;">
+                <ul id="commentsList-1" class="comments-list"></ul>
+                <div class="comments-form">
+                    <input type="text" id="commentInput-1" placeholder="Add a comment..." onkeydown="addComment(event, 1)" />
+                </div>
+            </div>
+        </div>
+        <div class="post" id="post-5">
+            <div class="post-header">
+                <div class="post-info-flex">
+                    <img src="https://www.sosyncd.com/wp-content/uploads/2022/06/62-2.png" alt="Profile Picture" class="profile-pic" />
+                    <p>Username 1</p>
+                    <ul>
+                        <li class="list-time">2 hrs</li>
+                    </ul>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <img src="assets/exp2.jpg" alt="Post Image" class="post-img" />
+            <div class="post-icons">
+                <div class="post-icons-left">
+                    <i class="fas fa-heart" onclick="toggleLike(1)"></i>
+                    <i class="fas fa-comment" onclick="toggleCommentSection(1)"></i>
+                    <i class="fas fa-share" onclick="toggleSharePopup(1)"></i>
+                </div>
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <p id="likesCount-1" class="likes">100 likes</p>
+            <p class="caption">@Username 1 Caption goes here...</p>
+            <a href="#" class="comments" onclick="toggleCommentSection(1)">View all comments</a>
+
+            <div class="comments-section" id="commentsSection-1" style="display: none;">
+                <ul id="commentsList-1" class="comments-list"></ul>
+                <div class="comments-form">
+                    <input type="text" id="commentInput-1" placeholder="Add a comment..." onkeydown="addComment(event, 1)" />
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <!-- Share Popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="share-popup" id="sharePopup">
+        <h3>Share this post</h3>
+        <button onclick="sharePost()">Share on Social Media</button>
+        <button onclick="closeSharePopup()" class="close-btn">Close</button>
+    </div>
+
+    <script src="explore.js"></script>
+
+</body>
+
+</html>
